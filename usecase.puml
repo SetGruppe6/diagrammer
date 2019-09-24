@@ -7,6 +7,11 @@ User --> (Use)
 
 Admin ---> (Use)
 
+
+Ny--> (heihei)
+
+
+
 note right of Admin : This is an example.
 
 note right of (Use)
