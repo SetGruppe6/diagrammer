@@ -7,11 +7,11 @@ User --> (Use)
 
 Admin ---> (Use)
 
-<<<<<<< HEAD
+
 Ny--> (hei)
 
-=======
->>>>>>> origin/master
+
+
 note right of Admin : This is an example.
 
 note right of (Use)
