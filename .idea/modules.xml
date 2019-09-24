@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/diagrammer.iml" filepath="$PROJECT_DIR$/.idea/diagrammer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/diagrammer.iml" filepath="$PROJECT_DIR$/diagrammer.iml" />
     </modules>
   </component>
 </project>
