@@ -7,28 +7,34 @@ left to right direction
 :3-parter: as Tredje
 :Admin: as Admin
 
+Arrangører <|-- Sponsorer
+
 (Registrere aktivitet) as (RegAktivitet)
 (Påmelding) as (Påmelding)
 (Opprette brukerprofil) as (Opprette)
 (Opprette ny konkurranse) as (NyKonk)
 (Browse konkurranser) as (Browse)
+(Velge aktivitet) as (VelgeAkt)
+(Se resultater) as (Resultater)
+(Betale påmelding) as (Betale)
+
+(Påmelding)<..(Betale) :Extend
+(Resultater)<..(Browse) :Extend
 
 
-
-Bruker -> (Opprette)
-Bruker --> (Browse)
+Bruker --> (Opprette)
 Bruker --> (Påmelding)
+Bruker --> (Resultater)
+Bruker --> (VelgeAkt)
 
 Admin --> (NyKonk)
 
 Lokal --> (Opprette)
-Lokal --> (Browse)
 Lokal --> (Påmelding)
 Lokal --> (RegAktivitet)
 Lokal --> (NyKonk)
+Lokal --> (Resultater)
 
-Arrangører --> (Opprette)
-
-
+Arrangører --> (NyKonk)
 
 @enduml
