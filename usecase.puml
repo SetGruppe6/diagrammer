@@ -1,33 +1,34 @@
 @startuml
-:Main Admin: as Admin
-(Use the application) as (Use)
+left to right direction
+:Bruker: as Bruker
+:Lokallag: as Lokal
+:Arrangører: as Arrangører
+:Sponsorer: as Sponsorer
+:3-parter: as Tredje
+:Admin: as Admin
 
-User -> (Start)
-User --> (Use)
-
-Admin ---> (Use)
-
-Test-->(hallo)
-Ny--> (heihei)
-Jeppe---> (hallo)
-Jeppe---->(heihei)
-jaja -->(heihei)
-
-User1 --> (heihhhh)
-
-StickmanMcStickerson ---> (heihei)
-Stickbro ---> (heihei)
+(Registrere aktivitet) as (RegAktivitet)
+(Påmelding) as (Påmelding)
+(Opprette brukerprofil) as (Opprette)
+(Opprette ny konkurranse) as (NyKonk)
+(Browse konkurranser) as (Browse)
 
 
 
-note right of Admin : This is an example.
+Bruker -> (Opprette)
+Bruker --> (Browse)
+Bruker --> (Påmelding)
 
-note right of (Use)
-A note can also
-be on several lines
-end note
+Admin --> (NyKonk)
 
-note "This note is connected\nto several objects." as N2
-(Start) .. N2
-N2 .. (Use)
+Lokal --> (Opprette)
+Lokal --> (Browse)
+Lokal --> (Påmelding)
+Lokal --> (RegAktivitet)
+Lokal --> (NyKonk)
+
+Arrangører --> (Opprette)
+
+
+
 @enduml
