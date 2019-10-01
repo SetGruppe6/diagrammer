@@ -1,0 +1,28 @@
+@startuml
+
+
+left to right direction
+
+Idrettslag--> (registrere seg)
+Idrettslag-->(lage arrangement)
+Idrettslag-->(Se medlemmer i idrettslag)
+(lage arrangement)-->(se påmeldte til arrangementer)
+Idrettslag-->(se tider/ resultatstatistikk)
+(administrere lagside)-->(legge inn info)
+Idrettslag-->(lage terminliste og aktivitetskalender)
+(legge inn info)-->(sende ut info til medlemmer og deltakere )
+Idrettslag-->(få inn betalinger)
+Idrettslag-->(administrere lagside)
+(administrere lagside) --> (endre logo)
+
+Deltaker-->(registrere seg)
+(registrere seg)-->(logge seg inn på lagside)
+Deltaker-->(melde seg på arrangementer)
+(melde seg på arrangementer)-->(se resultater)
+Deltaker-->(lese info)
+(melde seg på arrangementer)-->(betale kontigent og løpsavgift)
+Deltaker-->(se terminliste og aktivitetskalender)
+
+
+
+@enduml
