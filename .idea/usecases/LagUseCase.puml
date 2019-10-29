@@ -10,5 +10,4 @@ Idrettslag-down->(Se resultater)
 Idrettslag-->(Se oversikt over \n arrangementer de har deltatt \n eller skal delta på)
 Idrettslag -up-> (Sende ut mail med info \n om arrangement til påmeldte)
 
-
 @enduml
