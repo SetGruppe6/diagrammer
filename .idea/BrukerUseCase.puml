@@ -1,0 +1,12 @@
+@startuml
+left to right direction
+:Bruker:
+
+Bruker --> (Melde seg på arrangementer)
+Bruker --> (Se arrangementer og info)
+Bruker --> (Se resultater)
+Bruker --> (Velge distanse og type idrett)
+Bruker --> (Søke på arrangementer)
+Bruker --> (Se oversikt over \n arrangementer h*n har deltatt \n eller skal delta på)
+
+@enduml
