@@ -7,6 +7,8 @@ Idrettslag-right->(Endre/ Fjerne arrangement de har laget )
 Idrettslag-up->(Melde laget sitt på et eller flere arrangement)
 Idrettslag-down->(Se arrangementer)
 Idrettslag-down->(Se resultater)
+Idrettslag-->(Se oversikt over \n arrangementer de har deltatt \n eller skal delta på)
+Idrettslag -up-> (Sende ut mail med info \n om arrangement til påmeldte)
 
 
 @enduml

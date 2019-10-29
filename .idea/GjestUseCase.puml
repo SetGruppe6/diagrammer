@@ -1,0 +1,13 @@
+@startuml
+left to right direction
+:Gjest:
+
+Gjest --> (Melde seg på arrangementer)
+(Melde seg på arrangementer)-->(Skrive inn kontaktinfo)
+(Skrive inn kontaktinfo)-->(Få bekreftelse på påmelding)
+Gjest --> (Se arrangementer og info)
+Gjest --> (Se resultater)
+Gjest --> (Velge distanse og type idrett)
+Gjest --> (Søke på arrangementer)
+
+@enduml
