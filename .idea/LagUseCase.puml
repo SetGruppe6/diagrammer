@@ -1,0 +1,12 @@
+@startuml
+
+:Idrettslag:
+
+Idrettslag-Left->(Opprette arrangment)
+Idrettslag-right->(Endre/ Fjerne arrangement de har laget )
+Idrettslag-up->(Melde laget sitt på et eller flere arrangement)
+Idrettslag-down->(Se arrangementer)
+Idrettslag-down->(Se resultater)
+
+
+@enduml
