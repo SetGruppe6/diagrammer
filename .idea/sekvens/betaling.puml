@@ -1,0 +1,16 @@
+@startuml
+Bruker->Arrangement: meldPå()
+
+Arrangement-->Betalingsside: LeggInnKortInfo()
+Bruker->Betalingsside: dataInn()
+Betalingsside-->Database: sjekkOmDataStemmer()
+Database-->Betalingsside: return true/false
+
+alt true
+Betalingsside--> Database: gyldigBetalingsInfo()
+Betalingsside ->Arrangement : bekreftelse()
+Arrangement->Bruker: påmeldt()
+else false
+Arrangement-->Bruker: feilmelding()
+end
+@enduml
