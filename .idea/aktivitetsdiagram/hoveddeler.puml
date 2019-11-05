@@ -1,0 +1,18 @@
+@startuml
+
+
+if (logg in) then (arrangør)
+:Opprett arrangement;
+
+else (privatperson)
+
+endif
+
+:Se arrangement;
+:Melder seg på arrangementet;
+:Ser info om arrangement i kalender;
+:Deltar på arrangementet;
+:Ser resultater;
+stop
+
+@enduml
