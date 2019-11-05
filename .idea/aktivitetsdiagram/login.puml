@@ -1,0 +1,32 @@
+@startuml
+start
+if(Idrettslag?) then (ja)
+:logg inn som idrettslag;
+
+else (nei)
+
+    if (logg inn som privatperson) then (ja)
+   else (nei)
+    :fortsett som gjest;
+
+    :hovedside;
+    stop
+    endif
+endif
+
+
+while (Skriv inn brukernavn og passord) is (feil input)
+:Registrer deg/ \n feilmelding;
+
+endwhile (rett input)
+
+if(input riktig) then (idrettslag)
+:oversiktsside;
+stop
+
+else(privatperson)
+:min side;
+stop
+endif
+
+@enduml
