@@ -4,6 +4,8 @@
 if (logg in) then (arrangør)
 :Opprett arrangement;
 
+
+
 else (privatperson)
 
 endif

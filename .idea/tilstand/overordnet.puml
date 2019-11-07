@@ -1,0 +1,54 @@
+@startuml
+[*]--> Brukertype
+
+
+Brukertype-left-> OpprettArrangement : Admin
+Brukertype -right-> VelgArrangement : Bruker/gjest
+
+OpprettArrangement --> Påmelding
+VelgArrangement --> Påmelding
+
+Påmelding -left-> VelgDeltakere : admin
+Påmelding --> Betaling : bruker
+Påmelding -right-> PersonligInfo : gjest
+
+VelgDeltakere --> Betaling
+PersonligInfo --> Betaling
+
+Betaling --> Bekreftelse
+
+Bekreftelse -left-> Timeplan : admin/bruker
+Bekreftelse --> Delta : Gjest
+Timeplan --> Delta
+Delta -right-> Resultat
+
+Resultat --> [*]
+
+state OpprettArrangement{
+OpprettArrangement : Skriv inn all info om et \narrangement og publiser
+}
+state VelgArrangement{
+VelgArrangement : Velg hvilket arrangement \ndu vil delta på fra listen
+}
+state VelgDeltakere{
+VelgDeltakere : Finn navn på lagdeltakere fra \nlisten over medlemmer på laget
+}
+state PersonligInfo{
+PersonligInfo : Fyll ut skjema med \nall informasjon som trengs
+}
+state Betaling{
+Betaling : Velg betalingsmetode, \nBankkort eller Vipps
+}
+state Bekreftelse{
+Bekreftelse : Få bekreftelse på påmelding \nog betaling på mail
+}
+state Timeplan{
+Timeplan : Få oversikt over arrangementene \nman deltar på i sin personlige timeplan
+}
+state Delta{
+Delta: Arrangementet pågår
+}
+state Resultat{
+Resultat : Se oversikt over resultater på \nhovedsiden eller på din egen side
+}
+@enduml
