@@ -1,0 +1,16 @@
+@startuml
+actor Deltaker
+
+participant Brikke
+
+participant Resultatside
+
+participant Database
+
+Deltaker -> Brikke: bruker()
+Brikke --> Database: registrerData()
+
+Database --> Resultatside: sendResultater()
+
+Deltaker -> Resultatside: seResultater()
+@enduml
