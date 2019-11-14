@@ -1,0 +1,17 @@
+@startuml
+
+:Bruker har melt seg på et arrangement;
+:Deltaker har beltalt påmeldingsavgift;
+
+
+If(Betaling ble godkjent) then (ja )
+:Får opp kvittering;
+else( nei)
+:Betaling mislykket;
+stop
+endif
+
+:Administrator får varsel om påmeldelsen;
+:Sender en bekreftelse om påmelding på oppgitt epost;
+
+@enduml

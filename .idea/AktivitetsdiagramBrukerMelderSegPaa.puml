@@ -1,0 +1,16 @@
+@startuml
+repeat
+  :Finner et arrangement;
+  :Trykker seg inn på arrangementet;
+  :Får se informasjon om et arrangement;
+repeat while(Bruker vil melde seg på) is ( nei)->Bruker går tilbake til arrangementliste
+-> ja;
+:Bruker blir henvist til påmeldingskjemaet;
+if (Bruker har profil) then ( ja )
+else ( nei )
+:Oppgir navn og kontaktinformasjon;
+endif
+:Gå videre til valg av distanse;
+:Gå videre til betaling;
+stop
+@endumll.
